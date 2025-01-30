@@ -1,4 +1,5 @@
 # Learning Toolbox Library
+https://pypi.org/project/learning-toolbox/0.2.0/
 
 A Python library for generating learning resources like notes, quizzes, YouTube summaries, and mind maps using the Gemini AI and other tools.
 
@@ -6,12 +7,8 @@ A Python library for generating learning resources like notes, quizzes, YouTube 
 
 1.  **Install via pip (recommended):**
 
-    If you create a `setup.py` (see below), you can install the library using pip:
-
     ```bash
-    pip install path/to/learning_toolbox  # If installing from local directory
-    # Or if you upload to PyPI:
-    # pip install learning-toolbox
+     pip install learning-toolbox==0.2.0
     ```
 
 2.  **Manual Installation:**
@@ -25,14 +22,16 @@ A Python library for generating learning resources like notes, quizzes, YouTube 
     *   `markdown2`
     *   `youtube-transcript-api`
     *   `mermaid-cli` (must be installed separately on your system for mind maps)
-    *   `wkhtmltopdf` (must be installed separately or place binaries in `learning_toolbox/wkhtmltopdf/bin/`)
+         ```bash
+         npm install -g @mermaid-js/mermaid-cli
+         ```
+         
 
     Install dependencies using pip:
 
     ```bash
     pip install google-generativeai pdfkit markdown2 youtube-transcript-api
     ```
-    **Important:** For PDF conversion, ensure `wkhtmltopdf` is installed on your system and its binary path is correctly configured or placed within the library as described. For mind maps, `mermaid-cli` needs to be installed globally (e.g., via npm: `npm install -g @mermaid-js/mermaid-cli`).
 
 ## Usage
 
